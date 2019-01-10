@@ -2,7 +2,7 @@
 
 [Game live at ](https://typewiz.now.sh/) [https://typewiz.now.sh/](https://typewiz.now.sh/)
 
-![](./public/gfx/githubB.png)
+![](./public/gfx/typewiz.gif)
 
 ### Version
 1.1.0
