@@ -1,6 +1,6 @@
 # Typing game built with Node.js, mongoose, vanilla, handlebars, passport, html, css
 
-![](./public/gfx/github.png)
+![](./public/gfx/githubB.png)
 
 ### Version
 1.1.0
