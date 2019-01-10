@@ -10,8 +10,8 @@ module.exports = {
   // pass difficulty in params for various levels   function(level) => words.level  
   randomWord: function () {
     // Generate random array index 
-    let randIndex = Math.floor(Math.random() * words.syntax.length);
-    return words.syntax[randIndex];
+    let randIndex = Math.floor(Math.random() * words.easy.length);
+    return words.easy[randIndex];
   }
   // totalWpm: function(totalSeconds, timesPlayed) {
   //   let wpm = (totalSeconds / timesPlayed) * 60;

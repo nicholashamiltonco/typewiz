@@ -55,10 +55,9 @@ const words = {
     'superhardwordthatwillbehardtotype'
   ],
   syntax: [
-    'h'
-    // 'let hello = ‘hello’;'
-    // 'module.exports = router;',
-    // 'const hello = () => { console.log(‘Hello Word’) }'
+    'let hello = "hello";',
+    'module.exports = router;',
+    'const hello = () => { console.log(greeting) }'
   ]
 }
 
