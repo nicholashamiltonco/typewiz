@@ -1,0 +1,54 @@
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.formContainer {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+}
+
+h2.form-header {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 10px;
+}
+
+div.input-group {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+input.form-input {
+  margin: 0 auto;
+  display: block;
+  height: 30px;
+  width: 300px;
+  border: 2px solid #626262;
+  border-radius: 10px;
+  padding: 10px;
+}
+input.form-input:focus {
+  outline: none;
+}
+
+/* Change the white to any color ;) */
+input.form-input:-webkit-autofill,
+input.form-input:-webkit-autofill:hover, 
+input.form-input:-webkit-autofill:focus, 
+input.form-input:-webkit-autofill:active  {
+-webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+button.form-submit {
+  margin: 20px 0px;
+  width: 140px;
+  height: 42px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}

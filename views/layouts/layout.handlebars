@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typewiz</title>
+	{{!-- <link rel="stylesheet" href="/css/bootstrap.css" /> --}}
+	<link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/form.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">        
+                                                                                                          {{!-- code plugin --}}
+  {{!-- <link href="css/prism.css" rel="stylesheet" /> --}}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <audio id="correct" src="/audio/correct.mp3" preload="auto"></audio>
+</head>
+<body>
+	<div class="container">
+
+    <header class="animated" id="header">
+      <div class="sectionNav shadow">
+        <div class="containerNav">
+          {{!-- <a href="../"><img src="gfx/logo.png" id="logo"></a> --}}
+          <a href="../"><h1 id="logo">typewiz()</h1></a>
+           {{#if user}}
+            <ul id="ul">
+              <a href="/users/logout"><li role="presentation" class="li">Logout</li></a>
+              <a href="/stats"><li role="presentation" class="li">Stats</li></a>
+              <a href="/"><li role="presentation" class="li">Play</li></a>
+            </ul>
+           {{else}}
+            <ul id="ul">
+              <a href="/users/login"><li role="presentation" class="li">Login</li></a>
+              <a href="/users/register"><li role="presentation" class="li">Register</li></a>
+              <a href="/stats"><li role="presentation" class="li">Stats</li></a>
+            </ul>
+          {{/if}}
+          <div class="containerMenu">
+            <div id="nav-icon3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+    <div class="row">
+      <div class="main-container">
+        {{#if success_msg}}
+          <div class="alert alert-success">{{success_msg}}</div>
+        {{/if}}   
+
+        {{#if error_msg}}
+          <div class="alert alert-danger">{{error_msg}}</div>
+        {{/if}}
+
+        {{#if error}}
+          <div class="alert alert-danger">{{error}}</div>
+        {{/if}}
+        
+        {{{body}}}
+      </div>
+    </div>
+
+    <footer class="footer">
+        <a href="https://github.com/nicholashamilton" target="_blank"><img id="gh-logo" src="/gfx/githubB.png"></a>
+    </footer>
+
+  </div> <!-- /container -->
+
+    <script src="js/tg.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/sentences.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/syntax.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+                                                                                                              {{!-- code plugin --}}
+</body>
+</html>

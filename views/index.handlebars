@@ -1,0 +1,163 @@
+{{!-- <div class="page-header">
+  <p>{{stats.username}}</p>
+</div> --}}
+{{!-- 
+{{#if stats.highScore}}
+        <div class="alert alert-danger">High Score Active</div> 
+{{/if}}  --}}
+<div class="centerDash">
+
+  <div class="timerDiv">
+
+    <div class="wordContainer">
+      <h2 class="g-words preventcopy" id="current-word">{{stats.currentWord}}</h2>
+    </div>
+
+    {{!-- <div class="wordContainer">
+      <h2 class="g-words preventcopy" id="current-word"><pre><code class="language-css">{{stats.currentWord}}</code></pre></h2>
+    </div> --}}
+      
+      {{!-- <pre><code class="language-css preventcopy" id="current-word"></code>{{stats.currentWord}}</code></pre> --}}
+
+    <div class="wordScoreField">
+      <div class="grid-left">
+        <input 
+          class="inputStyling large"
+          id="word-input" 
+          type="text" 
+          placeholder="Start typing..."
+        >
+      </div>
+      <div class="grid-right">
+        <input 
+          class="inputStyling large"
+          id="current-score" 
+          type="text" 
+          placeholder="{{stats.currentScore}}" 
+          disabled="true"
+        >
+      </div>
+    </div>
+
+    <div class="wordScoreField">
+      <div class="grid-full">
+        <input 
+          class="inputStyling"
+          id="timerStatus2" 
+          disabled="true"
+        >
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+    {{!-- Temporarly disable time --}}
+    {{!-- <input id="time" type="text" disabled="true"> --}}
+
+  <table>
+
+    <tr>
+      <th colspan="2" style="width:100%; text-align:center;">Stats</th>
+    </tr>
+    <tr> 
+      <td style="width:50%; padding-left: 15px;">HighScore</td>
+      <td id="highScore" style="width:50%; padding-left: 15px;">{{stats.highScore}}</td> 
+    </tr>
+    <tr> 
+      <td style="width:50%; padding-left: 15px;">Average Score</td>
+      <td id="average-score" style="width:50%; padding-left: 15px;">{{stats.avgScore}}</td> 
+    </tr>
+
+  </table>
+
+</div>
+
+
+
+<style>
+/* center dash on homepage */
+div.centerDash {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+h2#current-word {
+  color: #ffffff;
+}
+div.wordContainer {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0px 0px 45px 0px;
+
+}
+input.inputStyling {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #626262;
+  border-radius: 10px;
+  padding: 10px;
+}
+input.inputStyling {
+  outline: none;
+}
+input.large {
+  height: 30px;
+}
+div.timerDiv {
+  margin: 0 auto;
+  padding: 0px;
+  display: block;
+  max-width: 500px;
+  text-align: center;
+}
+div.grid-left {
+  float: left;
+  width: 75%;
+}
+div.grid-right {
+  float: left;
+  width: 25%;
+}
+div.grid-full {
+  margin-top: -5px;
+  width: 100%;
+}
+div.wordScoreField {
+  margin: 0 auto;
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+}
+input#word-input {
+  width: 100%;
+}
+input#current-score {
+  width: 100%;
+}
+input#current-score::-webkit-input-placeholder,
+input#current-score::-moz-placeholder, 
+input#current-score:-ms-input-placeholder, 
+input#current-score:-moz-placeholder { 
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  padding: 18px;
+}
+input#timerStatus2 {
+  width: 100%;
+  height: 1px;
+  border: 2px solid #626262;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #71EC3F;
+}
+
+</style>
+
+
+
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "typewiz",
+  "version": "1.0.0",
+  "description": "Typing game built in Node, Mongoose, Handlebars, Passport, Vanilla",
+  "main": "app.js",
+  "scripts": {
+    "nodemon": "node app.js",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas Hamilton",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.3",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

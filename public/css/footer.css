@@ -1,0 +1,13 @@
+/* Custom page footer */
+.footer {
+  text-align: center;
+  color: #ffffff;
+  height: 70px;
+  background-color: #3A3A3A;
+  background-color: #ffffff;
+}
+
+#gh-logo {
+  height: 30px;
+  padding: 23px 0px;
+}

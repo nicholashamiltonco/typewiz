@@ -1,0 +1,41 @@
+<table>
+
+  <tr>
+    <th colspan="2" style="width:100%; text-align:center;">High Score</th>
+  </tr>
+  {{# each stats}}
+    <tr> 
+      <td style="width:50%; padding-left: 15px;">{{this.username}}</td>
+      <td style="width:50%; padding-left: 15px;">{{this.highScore}}</td> 
+    </tr>
+  {{/each}}
+
+</table>
+<br>
+<table>
+
+  <tr>
+    <th colspan="2" style="width:100%; text-align:center;">Average Score</th>
+  </tr>
+  {{# each stats}}
+    <tr> 
+      <td style="width:50%; padding-left: 15px;">{{this.username}}</td>
+      <td style="width:50%; padding-left: 15px;">{{this.avgScore}}</td> 
+    </tr>
+  {{/each}}
+
+</table>
+<br>
+<table>
+
+  <tr>
+    <th colspan="2" style="width:100%; text-align:center;">Current Score</th>
+  </tr>
+  {{# each stats}}
+    <tr> 
+      <td style="width:50%; padding-left: 15px;">{{this.username}}</td>
+      <td style="width:50%; padding-left: 15px;">{{this.currentScore}}</td> 
+    </tr>
+  {{/each}}
+
+</table>

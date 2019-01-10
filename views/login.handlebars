@@ -1,0 +1,15 @@
+{{#if logout_msg}}
+    <div class="alert alert-success">{{logout_msg}}</div>
+{{/if}} 
+<form method="post" action="/users/login">
+  <div class="formContainer">
+    <h2 class="form-header">Account Login</h2>
+    <div class="input-group">
+      <input type="text" class="form-input" name="username" placeholder="Username">
+    </div>
+    <div class="input-group">
+      <input type="password" class="form-input" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="form-submit">Submit</button>
+  </div>
+</form>
