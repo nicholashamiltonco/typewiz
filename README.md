@@ -1,3 +1,4 @@
+# (game at 70%, need to refactor/ add new feutures)
 # Typing game built with Node.js, mongoose, vanilla, handlebars, passport, html, css
 
 [Game live at ](https://typewiz.now.sh/) [https://typewiz.now.sh/](https://typewiz.now.sh/)
