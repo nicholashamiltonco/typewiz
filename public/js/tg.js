@@ -1,4 +1,4 @@
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:3333/stats' : 'https://typewiz-api.now.sh/stats';
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:3333/stats' : 'https://typewiz.now.sh/stats';
 window.addEventListener('load', init);
 
 // Database DOM Elements
