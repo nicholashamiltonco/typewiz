@@ -7,9 +7,6 @@
 ### Version
 1.1.0
 
-### Usage
-
-
 ### Installation
 
 Typewiz requires [Node.js](https://nodejs.org/) v4+ to run.
